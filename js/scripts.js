@@ -8,7 +8,7 @@ $(function() {
       box.setAttribute("class", "vinningshafi show");
       var teljari = 0;
       var hradi = 100;
-      var duration = 9000;
+      var duration = 12000;
       var output = $('.vinningshafi');
       var started = new Date().getTime();
 
@@ -33,7 +33,7 @@ $(function() {
         var audio = new Audio('./audio/sound.mp3');
         audio.play();
       } else {
-        if(teljari > 35){
+        if(teljari > 45){
           hradi = hradi + (hradi/20) + (hradi/50);
         }
         rando = getRandomInt(0, nofn.length);
@@ -42,7 +42,6 @@ $(function() {
           nofn[rando]
         );
         teljari++;
-        console.log(hradi);
         setTimeout(callback, hradi);
       }
 
