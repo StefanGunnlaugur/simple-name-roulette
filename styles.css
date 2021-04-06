@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  background-image: url(./img/leikur.jpg);
+  font-family: 'Amatic SC', cursive;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+main {
+  text-align: center;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+@keyframes example2 {
+    0%   {color:red; font-size: 4em;}
+    10%  {color:yellow;}
+    20%  {color:blue; }
+    30%  {color:green;}
+    40%  {color:red;}
+    50%  {color:yellow;}
+    60%  {color:blue; }
+    70%  {color:green;}
+    80%  {color:red;}
+    90%  {color:purple;}
+    100% {color:white; font-size: 10em; margin-top: 20%; margin-bottom: 50px;}
+}
+
+@keyframes example {
+    from {font-size: 4em;}
+    to {font-size: 12em;
+        margin-top: 20%;
+        margin-bottom: 50px;}
+}
+
+.animate {
+    animation-fill-mode: forwards;
+    animation-name: example2;
+    animation-duration: 8s;
+}
+
+.show{
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.vinningshafi{
+  height: 100%;
+  margin-top: 30%;
+  margin-left: 30%;
+  margin-right: 30%;
+  text-align: center;
+  color: #fff;
+  font-size: 4em;
+}
+
+.nafn{
+  margin-top: 50%;
+}
+
+.nota{
+  width: 100%;
+}
+
+.button {
+  transition: color 12s, font-size 12s;
+  font-family: 'Amatic SC', cursive;
+  display: inline-block;
+  margin-top: 5%;
+  border: 1px solid #666;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 256px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #eee;
+  background-color: #666;
+  font-size: 2rem;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer; }
+  .button:hover {
+    color: #eee;
+    background-color: #333; }
